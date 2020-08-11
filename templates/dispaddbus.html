@@ -1,0 +1,93 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("https://www.pandasecurity.com/mediacenter/src/uploads/2016/03/pandasecurity-Who-are-the-most-famous-hackers-in-history.jpg");
+      height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 660px;
+  margin: 20px;
+  top:150px;
+  max-width: 400px;
+  padding: 16px;
+  background-color: black;
+}
+
+
+
+/* Full-width input fields */
+input[type=text],input[type=password], input[type=Date],input[type=number],input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border-style: container;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus,input[type=password]:focus, input[type=Date]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<div class="bg-img">
+<div class="container">
+
+
+    <form action="http://localhost:5000/admin" method="post">
+        <lable><h4 style="color:white">Bus Added Successfully</h4></lable>
+        <label><b style="color:white">Name :</b></label>
+        <label><b style="color:white">{{value[0]}}</b></label><br><br>
+        <label><b style="color:white">From Place:</b></label>
+        <label><b style="color:white">{{value[1]}}</b></label><br><br>
+        <label><b style="color:white">To Place:</b></label>
+        <label><b style="color:white">{{value[2]}}</b></label><br><br>
+        <label><b style="color:white">Price:</b></label>
+        <label><b style="color:white">{{value[3]}}</b></label><br><br>
+        <label><b style="color:white">Seats :</b></label>
+        <label><b style="color:white">{{value[4]}}</b></label><br><br>
+        <label><b style="color:white">id  :</b></label>
+        <label><b style="color:red">{{value[5]}}</b></label><br>
+        <input type="submit" value="Back">
+        </form>
+        
+</div>
+    </body>
+</html>

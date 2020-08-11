@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>end</title>
+    </head>
+    <body >
+        <div style="position: -webkit-sticky;"><h1 style="background-color: violet; text-align: center;">BUS Details</h1>
+        <div style="background-color: red;">
+            <ul>
+                {%for i in range(0,val)%}
+
+                    <li>Bus Name:   {{status[i][0]}}<br>
+                        <li>From:   {{status[i][1]}}<br>
+                            <li>To: {{status[i][2]}}<br>
+                                <li>Price:  {{status[i][3]}}<br>
+                                    <li>Seats:  {{status[i][4]}}<br>
+                                        <li>Bus Id: {{status[i][5]}}<br><br><br>
+                {%endfor%}
+            </ul>
+          </div></div>
+    </body>
+</html>
